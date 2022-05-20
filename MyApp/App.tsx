@@ -29,9 +29,7 @@ import {
 
 const Section: React.FC<{
   title: string;
-}> = ({
-  // children, 
-  title}) => {
+}> = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -51,8 +49,7 @@ const Section: React.FC<{
             color: isDarkMode ? Colors.light : Colors.dark,
           },
         ]}>
-        
-        {/* {children} */}
+        {children}
       </Text>
     </View>
   );
@@ -76,7 +73,7 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          {/* <Section title="Step One">
+          <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
           </Section>
@@ -88,7 +85,7 @@ const App = () => {
           </Section>
           <Section title="Learn More">
             Read the docs to discover what to do next:
-          </Section> */}
+          </Section>
           <LearnMoreLinks />
         </View>
       </ScrollView>
