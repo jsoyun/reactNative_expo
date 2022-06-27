@@ -71,7 +71,8 @@ const App: () => Node = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Step One">
-           수정해 <Text style={styles.highlight}>App.js</Text> 수정수정
+            Reactnative 시작 <Text style={styles.highlight}>App.js</Text>{' '}
+            수정수정
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
