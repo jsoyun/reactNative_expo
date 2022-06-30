@@ -71,7 +71,7 @@ const App: () => Node = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Step One">
-            {/* Reactnative 시작이안되던데요{' '} */}
+            {/* Reacvvvvvvvvvvvvvvtnative 시작이안되던데요{' '} */}
             <Text style={styles.highlight}>App.js</Text> 수정수정
           </Section>
           <Section title="See Your Changes">
